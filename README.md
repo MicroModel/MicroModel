@@ -1,4 +1,4 @@
-# MicroRender
+# Micro Rendering Models
 The smallest stateful self rendering class I could think of. 17 lines of code means state changes cause render!
 
 # WARNING
