@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div id="test"></div>
+  <script type="text/javascript">
+    class Test extends MicroModel {
+      constructor(props) {
+        super(props);
+        this.state = {upper:1}
+        this.render = this.render.bind(this);
+      }
+
+      render() {
+        this.node.innerHTML = this.state.upper ? `HELLO WORLD!` : `Hello World!`;
+      }
+    }
+
+    var test;
+
+    window.onload = () => {
+      test = new Test({ id: 'test' });
+      test.node.onclick = () => test.setState({upper: !test.state.upper});
+    }
+  </script>
+</body>
+
+</html>
