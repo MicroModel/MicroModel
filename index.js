@@ -1,7 +1,6 @@
 class MicroModel{
   constructor(props){
     this.node = document.getElementById(props.id);
-    this.state = {};
     if(this.render){
       window.setTimeout(this.render.bind(this), 0);
     }
@@ -9,7 +8,7 @@ class MicroModel{
 
   setState(state){
     if( this.state != state && Object.values(state).length ){
-      Object.assign(this.state, state);
+      Object.assign({}, this.state, state);
       if(this.render){
         this.render();
       }
