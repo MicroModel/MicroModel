@@ -16,7 +16,7 @@ Then we just needed to make state updates asynchronous from renders. We kind of 
 Extendability is a serious house with classes. Want to override how the state works? Extend the class. Want to override how the Dom node and state are externally available? Extend the class. Want to add new functionality for only a few instances? Extend the class. Now it's REALLY hard to pollute the prototype in a bad way with ignorance of how JS inheritance works( hopefully ). Just use JS classes correctly and you can even compose the extensions! Then feature checking is as simple as a `thing instanceof MyExtendedMicroModel`!
 
 ## What do I hope to accomplish?
-Nothing really. I just keep re using this code over and over and over, and it's even made my co workers stop using React altogethor for a more JS experience( and better composition ). If you want to use it, here. Go ahead. We like it enough, you might too. Guess what I'm saying is 'Hello World'.
+Nothing really. I just keep re using this code over and over and over, and it's even made my co workers think about using React less altogethor for a more JS experience( and better composition ). If you want to use it, here. Go ahead. We like it enough, you might too. Guess what I'm saying is 'Hello World'.
 
 # FAQ
 ## Do I have to provide a DOM ID?
