@@ -9,7 +9,7 @@ class MicroModel{
 
   setState(state){
     if( this.state != state && Object.values(state).length ){
-      Object.assign({}, this.state, state);
+      this.state = Object.assign({}, this.state, state);
       if(this.render){
         window.setTimeout(this.render, 0);
       }
