@@ -1,6 +1,7 @@
 class MicroModel{
   constructor(props){
-    this.node = document.getElementById(props.id);
+    this.props = props;
+    this.node = document.getElementById(this.props.id);
     if(this.render){
       this.render = this.render.bind(this);
       window.requestAnimationFrame(this.render);
