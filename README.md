@@ -22,7 +22,7 @@ Nothing really. I just keep re using this code over and over and over, and it's 
 ## Do I have to provide a DOM ID?
 No, `document.getElementById(null) === null` and thus you can instantiate it as a store instead with a render method to cause updates to children with it's render method. `this.node` is just a conveince. It's not actually required.
 ## What if I just want a simple no-state dumb rendering object?
-Extend the class and add a method to cause async rendering through the Web APIs your browser provides( I myself abuse setTimeout )
+Extend the class and add a method to cause async rendering through the Web APIs your browser provides
 ## Why do I have to provide an object as the first argument to the constructor?
 Design choice to keep the footprint to the super from extensions easy to reason and do. Extend it with a new constructor if you want to change it's footprint. This just made it really easy to handle where a key would be( order of decleration in a object doesn't matter ).
 
